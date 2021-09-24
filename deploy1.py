@@ -15,6 +15,6 @@ headers = {
   'Authorization': 'Basic d2VibG9naWM6d2VsY29tZTE=',
   }
 
-response = requests.request("POST", url, headers=headers, data=payload, files=files, verify=False)
+response = requests.request("POST", url, headers=headers, data=json.dumps(payload), files=files, verify=False)
 
 print(response.text)
