@@ -4,11 +4,11 @@ import json
 url = "https://150.136.152.236:7002/management/wls/latest/deployments/application"
 #url = "http://localhost:1880/test"
 
-payload={"model": {"name":"testwebapp","targets": [ "ibmjcs_d_adminserver"]}}
+payload={"model": {"name":"SampleWebApp6","targets": [ "ibmjcs_d_adminserver"]}}
 
 
 files = {
-         'deployment': ('SampleWebApp.war', open('C://deploypoc//SampleWebApp.war', 'rb'), 'application/octet-stream')
+         'deployment': ('SampleWebApp6.war', open('SampleWebApp6.war', 'rb'), 'application/octet-stream')
                          }
 
 
