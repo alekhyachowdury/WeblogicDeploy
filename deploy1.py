@@ -5,10 +5,10 @@ url = "https://150.136.152.236:7002/management/wls/latest/deployments/applicatio
 #url = "http://localhost:1880/test"
 
 
-payload={"name": "testwebapp2","targets": ["ibmjcs_d_adminserver"]}
+payload={"name": "testwebapp6","targets": ["ibmjcs_d_adminserver"]}
 
 files = {'model':(None, json.dumps(payload), 'application/json'),
-         'deployment': ('SampleWebApp7.war', open('SampleWebApp7.war', 'rb'), 'application/octet-stream')
+         'deployment': ('SampleWebApp.war', open('SampleWebApp.war', 'rb'), 'application/octet-stream')
                          }
 print(files)
 
