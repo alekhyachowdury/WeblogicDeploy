@@ -15,7 +15,7 @@ print(files)
 headers = {  
   'X-Requested-By': 'TestClient',
   'Authorization': 'Basic d2VibG9naWM6d2VsY29tZTE=',
-  'Prefer':'respond-async';
+  
   }
 
 response = requests.request("POST", url, headers=headers, files=files, verify=False)
