@@ -7,7 +7,7 @@ url = "https://150.136.152.236:7002/management/wls/latest/deployments/applicatio
 payload={"model": {"name":"SampleWebApp6","targets": [ "ibmjcs_d_adminserver"]}}
 
 
-files = [("deployment": ("SampleWebApp6.war", open("SampleWebApp6.war", "rb"), "application/octet-stream"))]
+files = [("deployment", ("SampleWebApp6.war", open("SampleWebApp6.war", "rb"), "application/octet-stream"))]
 
 
 headers = {  
